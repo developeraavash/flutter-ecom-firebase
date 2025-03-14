@@ -3,8 +3,8 @@ import 'package:ecommerce_new_design/utils/theme/custom_theme/text_theme.dart';
 import 'package:flutter/material.dart';
 
 class TAppTheme {
-  TAppTheme._();//This is done to creating instance
-
+  TAppTheme._(); 
+  
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     brightness: Brightness.light,

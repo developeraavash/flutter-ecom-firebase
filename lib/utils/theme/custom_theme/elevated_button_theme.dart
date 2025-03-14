@@ -6,7 +6,6 @@ class TElevatedButtonTheme {
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-  
       foregroundColor: Colors.white,
       backgroundColor: Colors.blue,
       disabledBackgroundColor: Colors.grey,
@@ -22,6 +21,7 @@ class TElevatedButtonTheme {
     ),
   );
 
+  // Dark themes
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
