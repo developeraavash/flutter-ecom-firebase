@@ -12,6 +12,7 @@ class TTextTheme {
     return TextStyle(fontSize: fontSize, fontWeight: fontWeight, color: color);
   }
 
+  // This replace TextStule().copyWith( other variables);
 
   //! Light text theme
   static TextTheme lightTextTheme = TextTheme(
@@ -117,7 +118,7 @@ class TTextTheme {
     bodySmall: _baseTextStyle(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
-      color: Colors.white.withValues(alpha: 0.5), 
+      color: Colors.white.withValues(alpha: 0.5),
     ),
     labelLarge: _baseTextStyle(
       fontSize: 12.0,
@@ -127,11 +128,9 @@ class TTextTheme {
     labelMedium: _baseTextStyle(
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
-      color: Colors.white.withValues(alpha: 0.5), 
+      color: Colors.white.withValues(alpha: 0.5),
     ),
   );
-
-
 
   // Customizable Dark Text theme with dynamic parameters
   static TextTheme customDarkTextTheme({
@@ -200,7 +199,7 @@ class TTextTheme {
         fontWeight: FontWeight.normal,
         color:
             labelColor?.withValues(alpha: 0.5) ??
-            Colors.white.withValues(alpha: 0.5), 
+            Colors.white.withValues(alpha: 0.5),
       ),
     );
   }
