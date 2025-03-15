@@ -110,3 +110,23 @@ class TText {
   static const String homeAppBarTitle = "Shopping made easy";
   static const String homeAppBarSubTitle = "Welcome, Aavash Paudel!";
 }
+
+
+
+<!-- Enums -->
+
+enum TextStyle { small, medium, large }
+
+enum OrderStatus { processing, shipped, delivered }
+
+enum PaymentMethod {
+  esewa,
+  khalti,
+  googlePay,
+  applePay,
+  visa,
+  masterCard,
+  creditCard,
+  paytm,
+  razorPay,
+}
