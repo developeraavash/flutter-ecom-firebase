@@ -1,4 +1,3 @@
-<!-- Sizes  -->
 class TSize {
   // padding and margin size
   static const double xs = 4.0;
