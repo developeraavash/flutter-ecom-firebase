@@ -130,3 +130,10 @@ enum PaymentMethod {
   paytm,
   razorPay,
 }
+
+
+<!-- API all the Screts Key will stored here -->
+
+class ApiConstant {
+  static const String tSecretApiKey = "";
+}
