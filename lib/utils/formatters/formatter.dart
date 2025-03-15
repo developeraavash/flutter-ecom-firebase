@@ -24,4 +24,46 @@ class TFormatter {
     }
     return phoneNumber;
   }
+
+  // Format phone number to international format
+  static String internationalFormatPhoneNumber(String phoneNumber) {
+    var digitsOnly = phoneNumber.replaceAll(
+      RegExp(r'\D'),
+      '',
+    ); // Remove all non-digit characters
+
+    // Check if it's Nepal's phone number (country code +977)
+    if (digitsOnly.length == 10) {
+      digitsOnly =
+          '977$digitsOnly'; // Add Nepal country code to the phone number
+    }
+
+    String countryCode = '+977'; // Nepal country code
+    String localNumber = digitsOnly.substring(
+      3,
+    ); // Remove the country code part (first 3 digits of '977')
+
+    // Now format the phone number into an international style like +977 984-XXXXXXX
+    final formattedNumber = StringBuffer();
+    formattedNumber.write('$countryCode ');
+
+    int i = 0;
+    while (i < localNumber.length) {
+      int groupLength =
+          4; // After the country code, format as 4 digits (e.g., 984-XXXXXXX)
+      if (i == 0) {
+        formattedNumber.write(
+          localNumber.substring(i, i + 3),
+        ); // Add the first 3 digits
+        formattedNumber.write('-'); // Add the dash
+        i += 3;
+      }
+      formattedNumber.write(
+        localNumber.substring(i, i + groupLength),
+      ); // Add the next 4 digits
+      i += groupLength;
+    }
+
+    return formattedNumber.toString();
+  }
 }
