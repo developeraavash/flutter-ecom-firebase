@@ -1,4 +1,4 @@
-<!-- Sizes  -->
+#  <!-- Sizes  -->
 class TSize {
   // padding and margin size
   static const double xs = 4.0;
@@ -143,6 +143,8 @@ class ApiConstant {
 <!--  Pricing Calc -->
 
 // 
+
+
 
 class TPricingCalculator {
   /// -- Calculate Price based on tax and shipping
@@ -309,3 +311,6 @@ class TValidator {
 
 
 }
+
+
+# 
