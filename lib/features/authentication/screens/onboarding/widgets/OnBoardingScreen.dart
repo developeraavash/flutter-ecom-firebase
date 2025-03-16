@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
+import 'package:ecommerce_new_design/utils/constants/sizes.dart';
+import 'package:ecommerce_new_design/utils/helpers/helper_func.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/helpers/helper_func.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({
