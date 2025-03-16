@@ -22,18 +22,34 @@ class Onboarding extends StatelessWidget {
           ),
 
         //   Skip Button
-          Positioned(
-            top: TDeviceUtils.getAppBarHeight(),
-            right: TSize.defaultSize,
-            
-            child: TextButton(onPressed: (){},
-              child:const Text("Skip")
-          ),)
+          OnBoardingSkip()
+
+        //   Dot Navigation SmoothPageIndicator
+          
+
+        //   Circular Button
 
 
         ],
       ),
     );
+  }
+}
+
+class OnBoardingSkip extends StatelessWidget {
+  const OnBoardingSkip({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Positioned(
+      top: TDeviceUtils.getAppBarHeight(),
+      right: TSize.defaultSize,
+      
+      child: TextButton(onPressed: (){},
+        child:const Text("Skip")
+    ),);
   }
 }
 
