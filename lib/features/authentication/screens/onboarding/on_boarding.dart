@@ -19,6 +19,8 @@ class Onboarding extends StatelessWidget {
       body: Stack(
         children: [
           PageView(
+            controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: [
               OnBoardingScreen(image: on_boarding.TImages.onboardingImg1, title: TText.onBoardingTitle1, subTitle: TText.onBoardingSubtitle1,),
               OnBoardingScreen(image: on_boarding.TImages.onboardingImg2, title: TText.onBoardingTitle2, subTitle: TText.onBoardingSubtitle2,),
