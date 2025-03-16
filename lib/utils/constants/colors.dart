@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class AppColors {
-  AppColors._();
+class TColors {
+  TColors._();
 
   // App Basic Colors
   static const Color primaryColor = Color(0xFF4b68ff);

@@ -1,4 +1,4 @@
-import 'package:ecommerce_new_design/features/authentication/screens/on_boarding.dart';
+import 'package:ecommerce_new_design/features/authentication/screens/onboarding/on_boarding.dart';
 import 'package:ecommerce_new_design/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

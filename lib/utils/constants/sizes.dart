@@ -33,7 +33,7 @@ class TSize {
 
   // Deafult space between sections
 
-  static const double defaultSize = 24.0;
+  static const double defaultSpace = 24.0;
   static const double spaceBtnItems = 16.0;
   static const double spaceBtnSections = 32.0;
 

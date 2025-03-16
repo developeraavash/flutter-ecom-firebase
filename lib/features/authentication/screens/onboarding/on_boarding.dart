@@ -1,15 +1,20 @@
+import 'package:ecommerce_new_design/features/authentication/controllers.onBoarding/onBoarding_controller.dart';
+import 'package:ecommerce_new_design/features/authentication/screens/onboarding/widgets/OnBoardingDotNavigation.dart';
+import 'package:ecommerce_new_design/features/authentication/screens/onboarding/widgets/OnBoardingScreen.dart';
+import 'package:ecommerce_new_design/features/authentication/screens/onboarding/widgets/OnBoardingSkip.dart';
 import 'package:ecommerce_new_design/utils/constants/image_strings.dart' as on_boarding;
-import 'package:ecommerce_new_design/utils/constants/sizes.dart';
 import 'package:ecommerce_new_design/utils/constants/text_string.dart';
-import 'package:ecommerce_new_design/utils/device/device_utility.dart';
-import 'package:ecommerce_new_design/utils/helpers/helper_func.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'widgets/OnBoardingNextButton.dart';
 
 class Onboarding extends StatelessWidget {
   const  Onboarding({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller=Get.put(OnboardingController());
     return Scaffold(
       body: Stack(
         children: [
@@ -22,71 +27,16 @@ class Onboarding extends StatelessWidget {
           ),
 
         //   Skip Button
-          OnBoardingSkip()
+          OnBoardingSkip(),
 
         //   Dot Navigation SmoothPageIndicator
-          
+          OnBoardingDotNavigation(),
+          // SmoothPageIndicator()
+        
+          // Circular Button
+        //
+          OnBoardingNextButton()
 
-        //   Circular Button
-
-
-        ],
-      ),
-    );
-  }
-}
-
-class OnBoardingSkip extends StatelessWidget {
-  const OnBoardingSkip({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Positioned(
-      top: TDeviceUtils.getAppBarHeight(),
-      right: TSize.defaultSize,
-      
-      child: TextButton(onPressed: (){},
-        child:const Text("Skip")
-    ),);
-  }
-}
-
-class OnBoardingScreen extends StatelessWidget {
-  const OnBoardingScreen({
-    super.key, required this.image, required this.title, required this.subTitle,
-  });
-  final String image,title,subTitle;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(TSize.defaultSize),
-      child: PageView(
-        children: [
-          Column(
-            children: [
-              Image(
-                width: THelperFunc.screenWidth() * 0.8,
-                height: THelperFunc.screenHeight() * 0.6,
-                image:  AssetImage(image),
-              ),
-    
-              Text(
-               title,
-                style: Theme.of(context).textTheme.headlineMedium,
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(height: TSize.spaceBtnItems),
-              Text(
-                subTitle,
-                style: Theme.of(context).textTheme.bodyMedium,
-                textAlign: TextAlign.center,
-    
-              )
-            ],
-          ),
         ],
       ),
     );
