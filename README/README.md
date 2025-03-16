@@ -336,3 +336,8 @@ web: false
 - flutter pub run flutter_native_splash:create
 
 
+
+[//]: # (  smooth_page_indicator: ^1.2.1)
+
+
+
