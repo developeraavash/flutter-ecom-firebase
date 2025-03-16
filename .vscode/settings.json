@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/home/avs/Desktop/Flutter/ecommerce_new_design/linux"
+    "cmake.sourceDirectory": "/home/avs/Desktop/Flutter/ecommerce_new_design/linux",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

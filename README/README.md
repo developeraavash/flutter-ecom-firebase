@@ -313,4 +313,26 @@ class TValidator {
 }
 
 
-# 
+#  SplashScreen
+
+flutter_native_splash:
+  color: "#ffffff"
+  color_dark: "#272727"
+  image: assets/logos/DarkLogo.png
+  image_dark: assets/logos/DarkLogo.png
+
+
+android_12:
+  color: "#ffffff"
+  color_dark: "#272727"
+  image: assets/logos/DarkLogo.png
+  image_dark: assets/logos/DarkLogo.png 
+
+
+web: false
+
+- package needs to be installed   flutter_native_splash: ^2.4.5
+
+- flutter pub run flutter_native_splash:create
+
+
