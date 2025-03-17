@@ -384,3 +384,8 @@ const LoginForm(),
 }
 
 ![alt text](image.png)
+
+![alt text](first_curve-1.png)
+
+![alt text](second curve-2.png)
+![alt text](3 curverd-3.png)
