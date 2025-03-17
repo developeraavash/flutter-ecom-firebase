@@ -45,6 +45,8 @@ class TText {
       "Discover Limitless Choices and Unmatched Convenience.";
   static const String signupTitle = "Let's create your account";
   static const String forgetPasswordTitle = "Forget password";
+  static const String forgetResetTitle = "Reset password";
+
   static const String forgetPasswordSubTitle =
       "Don't worry sometimes people can forget too, enter your email and we will send you a password reset link.";
   static const String changeYourPasswordTitle = "Password Reset Email Sent";
@@ -61,4 +63,6 @@ class TText {
       "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
 
   static const String tContinue = "Continue";
+  static const String submit = "Submit";
+  static const String done = "Done";
 }
