@@ -39,6 +39,8 @@ flutter:
     - assets/images/
     - assets/logos/DarkLogo.png
     - assets/logos/LightLogo.png
+    - assets/logos/google.png
+    - assets/logos/
 
 
 
