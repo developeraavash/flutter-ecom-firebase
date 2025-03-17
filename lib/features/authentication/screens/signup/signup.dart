@@ -1,3 +1,6 @@
+import 'package:ecommerce_new_design/common/widget/login_signup/form_divider.dart';
+import 'package:ecommerce_new_design/common/widget/login_signup/socials_btn.dart'
+    show SocialButtons;
 import 'package:ecommerce_new_design/features/authentication/screens/signup/verify_email.dart';
 import 'package:ecommerce_new_design/features/authentication/screens/signup/widgets/sign_up_form.dart';
 import 'package:ecommerce_new_design/features/authentication/screens/signup/widgets/terms_and_condition_check.dart'
@@ -19,6 +22,7 @@ class Signup extends StatelessWidget {
           padding: EdgeInsets.all(TSize.defaultSpace),
 
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //  Title and Subtitle
@@ -45,6 +49,13 @@ class Signup extends StatelessWidget {
               ),
 
               const SizedBox(height: TSize.spaceBtnSections),
+              //   Divider  -orSignInWith
+              FormDivider(dividerText: TText.orSignInWith.capitalize!),
+
+              const SizedBox(height: TSize.spaceBtnSections),
+
+              //   Footer
+              const SocialButtons(),
             ],
           ),
         ),

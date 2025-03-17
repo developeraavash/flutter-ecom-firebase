@@ -2,7 +2,7 @@ name: ecommerce_new_design
 description: "A new Flutter project."
 
 
-publish_to: 'none' 
+publish_to: 'none'
 version: 1.0.0+1
 environment:
   sdk: ^3.7.0
@@ -41,6 +41,8 @@ flutter:
     - assets/logos/LightLogo.png
     - assets/logos/google.png
     - assets/logos/
+    - assets/animations/OnBoarding/
+    - assets/animations/email/
 
 
 

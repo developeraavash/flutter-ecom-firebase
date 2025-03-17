@@ -2,12 +2,15 @@ import 'package:ecommerce_new_design/utils/constants/sizes.dart';
 import 'package:ecommerce_new_design/utils/helpers/helper_func.dart';
 import 'package:flutter/material.dart';
 
-
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({
-    super.key, required this.image, required this.title, required this.subTitle,
+    super.key,
+    required this.image,
+    required this.title,
+    required this.subTitle,
   });
-  final String image,title,subTitle;
+
+  final String image, title, subTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +23,7 @@ class OnBoardingScreen extends StatelessWidget {
               Image(
                 width: THelperFunc.screenWidth() * 0.8,
                 height: THelperFunc.screenHeight() * 0.6,
-                image:  AssetImage(image),
+                image: AssetImage(image),
               ),
 
               Text(
@@ -33,8 +36,7 @@ class OnBoardingScreen extends StatelessWidget {
                 subTitle,
                 style: Theme.of(context).textTheme.bodyMedium,
                 textAlign: TextAlign.center,
-
-              )
+              ),
             ],
           ),
         ],

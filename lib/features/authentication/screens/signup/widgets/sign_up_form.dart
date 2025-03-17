@@ -49,6 +49,13 @@ class SignUpForm extends StatelessWidget {
           ),
           const SizedBox(height: TSize.spaceBtnInputFeilds),
 
+          //   Email
+          TextFormField(
+            decoration: const InputDecoration(
+              labelText: TText.email,
+              prefixIcon: Icon(Iconsax.sms),
+            ),
+          ),
           const SizedBox(height: TSize.spaceBtnInputFeilds),
 
           //   Phone no

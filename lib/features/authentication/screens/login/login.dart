@@ -5,7 +5,6 @@ import 'package:ecommerce_new_design/features/authentication/screens/login/widge
 import 'package:ecommerce_new_design/features/authentication/screens/login/widgets/login_header.dart';
 import 'package:ecommerce_new_design/utils/constants/sizes.dart';
 import 'package:ecommerce_new_design/utils/constants/text_string.dart';
-import 'package:ecommerce_new_design/utils/helpers/helper_func.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,7 +13,7 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunc.isDarkMode(context);
+    // final dark = THelperFunc.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

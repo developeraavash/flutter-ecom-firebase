@@ -1,5 +1,8 @@
 import 'package:ecommerce_new_design/features/authentication/screens/login/login.dart';
+import 'package:ecommerce_new_design/utils/constants/image_strings.dart';
 import 'package:ecommerce_new_design/utils/constants/sizes.dart';
+import 'package:ecommerce_new_design/utils/constants/text_string.dart';
+import 'package:ecommerce_new_design/utils/helpers/helper_func.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,6 +19,7 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         actions: [
           IconButton(
             onPressed: () => Get.offAll(() => const Login()),
@@ -23,17 +27,63 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
           ),
         ],
       ),
-      body: const SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(TSize.defaultSpace),
-          child: Column(
-            children: [
-              //   Images
+      body: SingleChildScrollView(
+        child: SizedBox(
+          height: THelperFunc.screenHeight(), // Ensuring full screen height
+          child: Padding(
+            padding: EdgeInsets.all(TSize.defaultSpace),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                //   Images
+                Image(
+                  image: AssetImage(TImages.deliveredEmailIllustration),
+                  width: THelperFunc.screenWidth() * 0.6,
+                ),
 
-              //   Title Subtitle
+                const SizedBox(height: TSize.spaceBtnSections),
 
-              //   Buttoms
-            ],
+                Text(
+                  TText.confirmEmail,
+                  style: Theme.of(context).textTheme.headlineMedium,
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: TSize.spaceBtnSections),
+
+                Text(
+                  "aavash.dev@gmail.com",
+                  style: Theme.of(context).textTheme.labelLarge,
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: TSize.spaceBtnSections),
+
+                Text(
+                  TText.confirmEmailSubTitle,
+                  style: Theme.of(context).textTheme.labelMedium,
+                  textAlign: TextAlign.center,
+                ),
+
+                const SizedBox(height: TSize.spaceBtnSections),
+
+                //   Buttons
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: const Text(TText.tContinue),
+                  ),
+                ),
+                const SizedBox(height: TSize.spaceBtnSections),
+
+                SizedBox(
+                  width: double.infinity,
+                  child: TextButton(
+                    onPressed: () {},
+                    child: const Text(TText.resendEmail),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

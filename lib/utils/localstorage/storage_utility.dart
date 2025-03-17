@@ -19,6 +19,7 @@ class TLocalStorage {
   // Generic method to read data
   T? readData<T>(String key) {
     storage.read<T>(key);
+    return null;
   }
 
   //Clear all data
