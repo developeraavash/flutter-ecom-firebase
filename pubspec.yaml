@@ -21,6 +21,7 @@ dependencies:
   flutter_native_splash: ^2.3.2
   smooth_page_indicator: ^1.2.1
   iconsax: ^0.0.8
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -43,6 +44,7 @@ flutter:
     - assets/logos/
     - assets/animations/OnBoarding/
     - assets/animations/email/
+
 
 
 

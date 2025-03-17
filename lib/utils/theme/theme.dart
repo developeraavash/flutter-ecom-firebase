@@ -4,9 +4,11 @@ import 'package:ecommerce_new_design/utils/theme/custom_theme/checkbox_theme.dar
 import 'package:ecommerce_new_design/utils/theme/custom_theme/clip_theme.dart';
 import 'package:ecommerce_new_design/utils/theme/custom_theme/elevated_button_theme.dart';
 import 'package:ecommerce_new_design/utils/theme/custom_theme/outline_button_theme.dart';
-import 'package:ecommerce_new_design/utils/theme/custom_theme/text_feild_theme.dart';
 import 'package:ecommerce_new_design/utils/theme/custom_theme/text_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'custom_theme/text_feild_theme.dart';
 
 class TAppTheme {
   TAppTheme._();
@@ -18,7 +20,8 @@ class TAppTheme {
     textTheme: TTextTheme.lightTextTheme,
     chipTheme: TClipTheme.lightChipTheme,
     scaffoldBackgroundColor: Colors.white,
-
+    fontFamily: GoogleFonts.poppins().fontFamily,
+    // Apply Google Font globally
     appBarTheme: TAppbarTheme.lightAppBarTheme,
     checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
     bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
@@ -32,7 +35,8 @@ class TAppTheme {
     primaryColor: Colors.blue,
     textTheme: TTextTheme.darkTextTheme,
     scaffoldBackgroundColor: Colors.black,
-
+    fontFamily: GoogleFonts.poppins().fontFamily,
+    // Apply Google Font globally
     appBarTheme: TAppbarTheme.darkAppBarTheme,
     bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
     checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
@@ -41,5 +45,4 @@ class TAppTheme {
     outlinedButtonTheme: TOutlineButtonTheme.darkOutlineButtonTheme,
     inputDecorationTheme: TTextFeildTheme.darkInputDecorationTheme,
   );
-
 }

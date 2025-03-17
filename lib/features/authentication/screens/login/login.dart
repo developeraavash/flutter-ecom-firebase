@@ -8,8 +8,8 @@ import 'package:ecommerce_new_design/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class Login extends StatelessWidget {
-  const Login({super.key});
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

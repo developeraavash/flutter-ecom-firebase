@@ -17,7 +17,7 @@ class TImages {
   static const String productsSaleIllustration =
       "assets/images/animations/sammy-line-sale.png";
   static const String staticSuccessIllustration =
-      "assets/images/animations/sammy-line-success.png";
+      "assets/animations/email/varified_2.png";
   static const String deliveredInPlaneIllustration =
       "assets/images/animations/sammy-line-come-back-Later.png";
   static const String deliveredEmailIllustration =

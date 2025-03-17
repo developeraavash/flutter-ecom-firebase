@@ -1,3 +1,4 @@
+import 'package:ecommerce_new_design/common/widget/success_screen/success_screen.dart';
 import 'package:ecommerce_new_design/features/authentication/screens/login/login.dart';
 import 'package:ecommerce_new_design/utils/constants/image_strings.dart';
 import 'package:ecommerce_new_design/utils/constants/sizes.dart';
@@ -22,7 +23,7 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
-            onPressed: () => Get.offAll(() => const Login()),
+            onPressed: () => Get.offAll(() => const LoginScreen()),
             icon: const Icon(CupertinoIcons.clear),
           ),
         ],
@@ -69,7 +70,16 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed:
+                        () => Get.to(
+                          () => SuccessScreen(
+                            image: TImages.staticSuccessIllustration,
+                            title: TText.yourAccountCreatedTitle,
+                            subTitle: TText.yourAccountCreatedSubTitle,
+
+                            onPressed: () {},
+                          ),
+                        ),
                     child: const Text(TText.tContinue),
                   ),
                 ),
