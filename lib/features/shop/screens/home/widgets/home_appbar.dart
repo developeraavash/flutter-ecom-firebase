@@ -1,11 +1,9 @@
-import 'package:badges/badges.dart' as badges;
 import 'package:ecommerce_new_design/common/widget/appbar/appbar.dart';
 import 'package:ecommerce_new_design/common/widget/products/cart/cart_menu_icon.dart';
 import 'package:ecommerce_new_design/utils/constants/colors.dart';
 import 'package:ecommerce_new_design/utils/constants/text_string.dart'
     show TText;
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class THomeAppBar extends StatelessWidget {
   const THomeAppBar({super.key});
@@ -32,10 +30,6 @@ class THomeAppBar extends StatelessWidget {
         ],
       ),
       actions: [
-        badges.Badge(
-          badgeContent: Text('3', style: TextStyle(color: TColors.textWhite)),
-          child: Icon(Iconsax.shopping_bag),
-        ),
         TCartCounterIcon(onPressed: () {}, iconColor: TColors.textWhite),
       ],
     );
