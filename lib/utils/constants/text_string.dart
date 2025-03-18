@@ -12,9 +12,6 @@ class TText {
   static const String onBoardingSubtitle3 =
       "Get your order delivered to your door with ease";
 
-  static const String homeAppBarTitle = "Shopping made easy";
-  static const String homeAppBarSubTitle = "Welcome, Aavash Paudel!";
-
   // -- Authentication Form Text
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
@@ -65,4 +62,9 @@ class TText {
   static const String tContinue = "Continue";
   static const String submit = "Submit";
   static const String done = "Done";
+
+  // ---  Home
+
+  static const String homeAppBarTitle = "Shopping made easy";
+  static const String homeAppBarSubTitle = "Welcome, Aavash Paudel!";
 }
