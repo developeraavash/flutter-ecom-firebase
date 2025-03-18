@@ -5,51 +5,53 @@ class TColors {
   TColors._();
 
   // App Basic Colors
-  static const Color primaryColor = Color(0xFF4b68ff);
-  static const Color secondary = Color(0xFFFFE24B);
-  static const Color accent = Color(0xFFb0c7ff);
+  static const Color primaryColor = Color(0xEE6366F1); // Rich indigo
+  static const Color secondary = Color(0xFFF59E0B); // Warm amber
+  static const Color accent = Color(0xFF60A5FA); // Soft sky blue
 
-  // GradientColors
+  // Gradient Colors
   static const Gradient linearGradient = LinearGradient(
-    begin: Alignment(0.0, 0.0),
-    end: Alignment(0.707, -0.707),
-    colors: [Color(0xffff9a9e), Color(0xfffad0c4), Color(0xfffad0c4)],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [
+      Color(0xFF8B5CF6), // Deep purple
+      Color(0xFF6366F1), // Indigo
+      Color(0xFF60A5FA), // Sky blue
+    ],
   );
 
   // Text colors
-  static const Color textPri = Color(0xFF333333);
-  static const Color textSec = Color(0xFF6c757D);
-  static const Color textWhite = Colors.white;
+  static const Color textPrimary = Color(0xFF1F2937); // Soft black
+  static const Color textSecondary = Color(0xFF6B7280); // Cool gray
+  static const Color textWhite = Color(0xFFF9FAFB); // Off-white
 
-  // BackgroundColor
-  static const light = Color(0xFFF6F6F6);
-  static const dark = Color(0xFF6C757D);
-  static const primaryBackground = Color(0xFFF3F5FF);
+  // Background Colors
+  static const Color light = Color(0xFFF8FAFC); // Ice white
+  static const Color dark = Color(0xFF111827); // Deep navy
+  static const Color primaryBackground = Color(0xFFEFF6FF); // Pale indigo
 
-  // Background Containers Colors
-  static const Color lightContainer = Color(0xFFF6F6F6);
-  static Color darkContainer = Colors.black45;
+  // Container Colors
+  static const Color lightContainer = Color(0xFFFFFFFF);
+  static const Color darkContainer = Color(0xFF1F2937); // Charcoal
 
-  // Buttons Colors
-
-  static const Color buttonPri = Color(0xFF4b68ff);
-  static const Color buttonSec = Color(0xFF6c757d);
-  static const Color buttonDisabled = Color(0xFFc4c4c4);
+  // Button Colors
+  static const Color buttonPrimary = Color(0xFF4F46E5); // Deep indigo
+  static const Color buttonSecondary = Color(0xFF374151); // Graphite
+  static const Color buttonDisabled = Color(0xFF9CA3AF); // Silver
 
   // Border Colors
-  static const Color borderPri = Color(0xFFD9d9d9);
-  static const Color borderSec = Color(0xFFE6E6E6);
+  static const Color borderPrimary = Color(0xFFE5E7EB); // Light gray
+  static const Color borderSecondary = Color(0xFFF3F4F6); // Extra light gray
 
-  // Error and Validation Colors
-
-  static const Color error = Color(0xFFd32f2f);
-  static const Color success = Color(0xFF388e3c);
-  static const Color warning = Color(0xfff57c00);
-  static const Color info = Color(0xff1976d2);
+  // Status Colors
+  static const Color error = Color(0xFFDC2626); // Crimson red
+  static const Color success = Color(0xFF16A34A); // Forest green
+  static const Color warning = Color(0xFFEA580C); // Vibrant orange
+  static const Color info = Color(0xFF2563EB); // Sapphire blue
 
   // Neutral Shades
-  static const Color black = Color(0xFF232323);
-  static const Color darkerGrey = Color(0xFF4f4f4f);
-  static const Color darkGrey = Color(0xFF939393);
-  static const Color grey = Color(0xFFe0e0e0);
+  static const Color black = Color(0xFF030712); // Soft black
+  static const Color darkerGrey = Color(0xFF374151); // Graphite
+  static const Color darkGrey = Color(0xFF6B7280); // Medium gray
+  static const Color grey = Color(0xFFF3F4F6); // Light gray
 }
