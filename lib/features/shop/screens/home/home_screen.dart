@@ -7,9 +7,13 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //
+      appBar: Padding(padding: const EdgeInsets.all(8.0), child: AppBar()),
       body: SingleChildScrollView(
-        child: Column(children: [TPrimaryHeaderContainer(child: Container())]),
+        child: Column(
+          children: [
+            TPrimaryHeaderContainer(child: Container(child: Text("data"))),
+          ],
+        ),
       ),
     );
   }

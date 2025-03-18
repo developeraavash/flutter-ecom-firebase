@@ -383,9 +383,14 @@ const LoginForm(),
 }
 }
 
-![alt text](image.png)
+!
 
-![alt text](first_curve-1.png)
 
-![alt text](second curve-2.png)
-![alt text](3 curverd-3.png)
+
+<!-- Course  Flows-->
+
+![1](image-4.png)
+
+![2](image-5.png)
+
+![3](image-6.png)
